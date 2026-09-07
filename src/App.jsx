@@ -1,10 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Gallery from './pages/Gallery';
 import TimelineMap from './pages/TimelineMap';
 import Music from './pages/Music';
-import Dramas from './pages/Dramas'; // <-- ИМПОРТ
+import Dramas from './pages/Dramas';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/map" element={<TimelineMap />} />
         <Route path="/music" element={<Music />} />
-        <Route path="/dramas" element={<Dramas />} /> {/* <-- ПУТЬ */}
+        <Route path="/dramas" element={<Dramas />} />
       </Routes>
     </Router>
   );
